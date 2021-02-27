@@ -22,6 +22,7 @@ pub async fn get_lyrics(title: &str, author: &str) -> Result<String, Error> {
     Ok(resp.lyrics)
 }
 
+#[cfg(test)]
 #[tokio::test]
 async fn test_fetch_lyrics() {
     let lyrics = get_lyrics("popular monster", "Falling in Reverse").await;
