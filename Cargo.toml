@@ -1,0 +1,16 @@
+[package]
+authors = ["MGlolenstine <mglolenstine@gmail.com>"]
+description = "A crate that allows you to fetch lyrics from a webservice lyrics.ovh."
+edition = "2018"
+keywords = ["api", "lyrics"]
+license = "MIT"
+name = "lyrics_ovh"
+repository = "https://github.com/MGlolenstine/lyrics_ovh"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = {version = "0.11.1", features = ["json"]}
+serde = {version = "1.0.123", features = ["derive"]}
+tokio = {version = "1.2.0", features = ["macros"]}
