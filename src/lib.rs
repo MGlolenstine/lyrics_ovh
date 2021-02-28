@@ -30,6 +30,10 @@ pub async fn get_lyrics(title: &str, author: &str) -> Result<String, Error> {
     Ok(resp.lyrics)
 }
 
+pub async fn fetc_lyrics() {
+    // Fetch lyrics like this: https://github.com/AllToMP3/alltomp3/blob/master/index.js#L72
+}
+
 #[cfg(test)]
 #[tokio::test]
 async fn test_fetch_lyrics() {
