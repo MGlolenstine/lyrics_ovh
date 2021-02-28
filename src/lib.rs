@@ -16,11 +16,11 @@ struct Lyrics {
 ///
 /// ## Example
 ///```rust
-/// #[tokio::main]
-/// pub async fn main(){
-///     let lyrics = get_lyrics("Popular Monster", "Falling in reverse").await;
-///     println!("Lyrics to the song Popular monster by Falling in reverse: \n {}", lyrics);
-/// }
+///#[tokio::main]
+///pub async fn main(){
+///    let lyrics = get_lyrics("Popular Monster", "Falling in reverse").await;
+///    println!("Lyrics to the song Popular monster by Falling in reverse: \n {}", lyrics);
+///}
 ///```
 pub async fn get_lyrics(title: &str, author: &str) -> Result<String, Error> {
     let resp = reqwest::get(&format!("https://api.lyrics.ovh/v1/{}/{}", author, title))
