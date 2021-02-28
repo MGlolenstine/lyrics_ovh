@@ -7,6 +7,14 @@ struct Lyrics {
 }
 
 /// Fetch lyrics for the specified song.
+///
+/// ## Return
+/// Returns lyrics as a string if they're found.
+///
+/// ## Error
+/// Returns the reqwest error if any occur.
+///
+/// ## Example
 ///```rust
 /// #[tokio::main]
 /// pub async fn main(){

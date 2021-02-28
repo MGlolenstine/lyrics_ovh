@@ -1,3 +1,5 @@
+![](https://docs.rs/lyrics_ovh/badge.svg)
+
 # Lyrics_ovh
 
 This is a library that allows you to fetch lyrics to a song of your choosing.
